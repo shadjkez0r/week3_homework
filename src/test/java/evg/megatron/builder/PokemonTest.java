@@ -13,7 +13,7 @@ public class PokemonTest {
     @DisplayName("Мы можем создать покемона через билдер," +
             " указав только обязательные аргументы в констукторе билдера.")
     void shouldCreatePokemonThroughBuilderOnlyRequiredArgumentsAtBuilderConstructor() {
-        pokemon = new Pokemon.PokemonBuilder("Pikachu", PokemonType.ELECTRIC).build();
+        pokemon = Pokemon.builder("Pikachu", PokemonType.ELECTRIC).build();
 
         assertThat(pokemon).isNotNull();
     }
@@ -21,7 +21,7 @@ public class PokemonTest {
     @Test
     @DisplayName("Мы можем создать покемона, указывая необязательные аргументы в любом порядке")
     void shouldCreatePokemonThroughBuilderWithUnrequiredArgumentsAtAnyOrder() {
-        pokemon = new Pokemon.PokemonBuilder("Pikachu", PokemonType.ELECTRIC)
+        pokemon = Pokemon.builder("Pikachu", PokemonType.ELECTRIC)
                 .gender(Gender.MALE)
                 .height(10)
                 .level(100)

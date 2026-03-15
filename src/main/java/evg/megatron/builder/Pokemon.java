@@ -19,6 +19,10 @@ public class Pokemon {
         this.psychoType = builder.psychoType;
     }
 
+    public static PokemonBuilder builder(String name, PokemonType type) {
+        return new PokemonBuilder(name, type);
+    }
+
     public String getName() {
         return name;
     }
@@ -69,7 +73,8 @@ public class Pokemon {
         private double height;
         private PsychoType psychoType;
 
-        public PokemonBuilder(String name, PokemonType type) {
+
+        private PokemonBuilder(String name, PokemonType type) {
             this.name = name;
             this.type = type;
         }
