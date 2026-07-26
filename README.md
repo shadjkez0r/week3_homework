@@ -73,7 +73,7 @@ src/main/java/evg/megatron/
 - **Сборщик проектов:** Apache Maven 3.8+
 - **Операционная система:** Windows / Linux / macOS
 
-### 🛠️ Инструкция по сборке и запуску (How to Run)
+### 🛠️ Инструкция по сборке и тестированию (How to Run & Test)
 
 1. **Клонирование репозитория:**
    ```bash
@@ -86,7 +86,15 @@ src/main/java/evg/megatron/
    mvn clean package
    ```
 
-3. **Запуск демонстрации паттерна Strategy (Поиск покемонов):**
+3. **Запуск автоматических тестов для всех 6 паттернов GoF:**
+   В проекте реализовано полное тестовое покрытие для каждого паттерна (в папке `src/test/java`). Чтобы запустить проверку и демонстрацию работы всех 6 паттернов разом, выполните команду:
+   ```bash
+   mvn test
+   ```
+   *Вывод тестов покажет работу каждого паттерна: `JsonToCsvAdapterTest`, `PokemonTest` (Builder), `PokemonExamineServiceTest` (Chain of Responsibility), `WitcherDialogTest` (Decorator), `CachedPokedexRepositoryTest` (Proxy) и `PokemonMasterTest` (Strategy).*
+
+4. **Запуск консольной демонстрации паттерна Strategy (Поиск покемонов):**
+   Для паттерна Стратегия также предусмотрено интерактивное консольное приложение:
    ```bash
    java -cp target/Homework3-1.0-SNAPSHOT.jar evg.megatron.strategy.Main
    ```
