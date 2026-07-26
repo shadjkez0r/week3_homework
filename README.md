@@ -5,7 +5,7 @@
 ![Patterns](https://img.shields.io/badge/GoF%20Patterns-6%20Implemented-4EAA25?style=for-the-badge)
 ![Theme](https://img.shields.io/badge/Theme-Pok%C3%A9mon%20%7C%20Witcher-purple?style=for-the-badge)
 
-Учебный и архитектурный проект (Homework 3), представляющий собой глубокую практическую реализацию 6 классических паттернов проектирования Gang of Four (GoF) на языке Java. Все паттерны смоделированы на ярких нетривиальных предметных областях (экосистема Pokémon, диалоговая система The Witcher и интеграция Looney Tunes).
+Учебный и архитектурный проект (Homework 3), представляющий собой практическую реализацию 6 классических паттернов проектирования Gang of Four (GoF) на языке Java. Все паттерны смоделированы на ярких нетривиальных предметных областях (экосистема Pokémon, диалоговая система The Witcher и интеграция Looney Tunes).
 
 ---
 
